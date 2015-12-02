@@ -29,7 +29,11 @@ spec = do
       day1Part1 ")())())" `shouldBe` negate 3
   describe "day1Part2" $ do
     it "initial close paren reaches the basement immediately" $ do
-      day1Part2 (negate 1) ")" `shouldBe` 1
+      day1Part2 (negate 1) ")" `shouldBe` Just 1
     it "()()) enters the basement at position 5" $ do
-      day1Part2 (negate 1) "()())" `shouldBe` 5
+      day1Part2 (negate 1) "()())" `shouldBe` Just 5
+    it "should return Nothing for strings that don't reach the target floor" $ do
+      day1Part2 (negate 1) "(((" `shouldBe` Nothing
+      day1Part2 1 ")))" `shouldBe` Nothing
+      day1Part2 1 "" `shouldBe` Nothing
 
