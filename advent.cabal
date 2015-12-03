@@ -13,7 +13,8 @@ library
   exposed-modules:     Advent.Day1, Advent.Day2
   other-extensions:    NoImplicitPrelude, LambdaCase
   build-depends:       base >=4.8 && <4.9,
-                       base-prelude
+                       base-prelude,
+                       split
   hs-source-dirs:      src
   default-language:    Haskell2010
 
