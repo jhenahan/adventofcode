@@ -2,7 +2,6 @@
 module Advent.Day3Spec (main, spec) where
 
 import Test.Hspec
-import Test.QuickCheck
 import BasePrelude
 import Advent.Day3
 
