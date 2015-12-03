@@ -10,11 +10,12 @@ cabal-version:       >=1.10
 
 
 library
-  exposed-modules:     Advent.Day1, Advent.Day2
+  exposed-modules:     Advent.Day1, Advent.Day2, Advent.Day3
   other-extensions:    NoImplicitPrelude, LambdaCase
-  build-depends:       base >=4.8 && <4.9,
-                       base-prelude,
-                       split
+  build-depends:       base >=4.8 && <4.9
+                     , base-prelude
+                     , containers
+                     , split
   hs-source-dirs:      src
   default-language:    Haskell2010
 
