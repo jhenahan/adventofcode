@@ -1,10 +1,10 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 module Advent.Day2Spec (main, spec) where
 
-import Test.Hspec
-import Test.QuickCheck
-import BasePrelude
-import Advent.Day2
+import           Advent.Day2
+import           BasePrelude
+import           Test.Hspec
+import           Test.QuickCheck
 
 main :: IO ()
 main = hspec spec
