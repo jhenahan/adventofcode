@@ -1,8 +1,8 @@
+{-# LANGUAGE LambdaCase        #-}
 {-# LANGUAGE NoImplicitPrelude #-}
-{-# LANGUAGE LambdaCase #-}
 module Advent.Day1 where
 
-import BasePrelude
+import           BasePrelude
 
 day1Helper :: Integer -> Char -> Integer
 day1Helper acc = \case

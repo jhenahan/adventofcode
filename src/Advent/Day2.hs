@@ -1,9 +1,9 @@
 {-# LANGUAGE NoImplicitPrelude #-}
-{-# LANGUAGE RecordWildCards #-}
+{-# LANGUAGE RecordWildCards   #-}
 module Advent.Day2 where
 
-import BasePrelude
-import Data.List.Split
+import           BasePrelude
+import           Data.List.Split
 
 data BoxDimensions = Dim { l :: Integer
                          , w :: Integer

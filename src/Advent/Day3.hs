@@ -1,10 +1,10 @@
-{-# LANGUAGE RecordWildCards #-}
+{-# LANGUAGE LambdaCase        #-}
 {-# LANGUAGE NoImplicitPrelude #-}
-{-# LANGUAGE LambdaCase #-}
+{-# LANGUAGE RecordWildCards   #-}
 module Advent.Day3 where
 
-import BasePrelude hiding (fromList, toList)
-import Data.Set (fromList, toList)
+import           BasePrelude hiding (fromList, toList)
+import           Data.Set    (fromList, toList)
 
 data Position = Pos { x :: Integer, y :: Integer }
               deriving (Show, Eq, Ord)
@@ -20,7 +20,7 @@ totalHouses :: [Position] -> Integer
 totalHouses = genericLength . toList . fromList
 
 singleMoves :: Position -> String -> [Position]
-singleMoves = scanl' move 
+singleMoves = scanl' move
 
 pairs :: [a] -> [(a, a)]
 pairs = zip <*> tail
