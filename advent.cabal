@@ -10,7 +10,11 @@ cabal-version:       >=1.10
 
 
 library
-  exposed-modules:     Advent.Day1, Advent.Day2, Advent.Day3, Advent.Day4
+  exposed-modules:     Advent.Day1
+                     , Advent.Day2
+                     , Advent.Day3
+                     , Advent.Day4
+                     , Advent.Day5
   other-extensions:    NoImplicitPrelude, LambdaCase
   build-depends:       base >=4.8 && <4.9
                      , base-prelude
