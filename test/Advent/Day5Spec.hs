@@ -18,4 +18,10 @@ spec = do
       day5part1 "jchzalrnumimnmhp" `shouldBe` False
       day5part1 "haegwjzuvuyypxyu" `shouldBe` False
       day5part1 "dvszwmarrgswjxmb" `shouldBe` False
-
+  describe "day5Part2" $ do
+    it "nice strings are nice" $ do
+      day5part2 "qjhvhtzxzqqjkmpb" `shouldBe` True
+      day5part2 "xxyxx" `shouldBe` True
+    it "naughty strings are naughty" $ do
+      day5part2 "uurcxstgmygtbstg" `shouldBe` False
+      day5part2 "ieodomkazucvgmuy" `shouldBe` False
